@@ -1,0 +1,101 @@
+#br_token_button {
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #595c7d;
+    box-shadow: 5px 8px 19px -9px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 5px 8px 19px -9px rgba(0,0,0,0.8);
+    -moz-box-shadow: 5px 8px 19px -9px rgba(0,0,0,0.8);
+}
+
+#br_token_container {
+    position: fixed;
+    bottom: 94px;
+    right: 17px;
+    z-index: 10000;
+}
+
+#br_token_button:active {
+    background-color: rgb(231, 231, 231);
+}
+
+/* Here goes the modal css style */
+
+
+#br_token_popup_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,.6);
+    opacity: 1;
+    z-index: 11000;
+}
+
+#br_token_dialogbox {
+    width: 65%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+    color: #595c7d;
+    text-align: center;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+#br_token_dialogbox > p {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    overflow: auto;
+    overflow-wrap: break-word;
+    border-left: 4px solid red;
+    padding: 8px;
+    background-color: antiquewhite;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+#br_token_close_wrapper {
+    isolation: isolate;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-color: transparent;
+}
+
+.br_button {
+    display: block;
+    margin-top: 8px;
+    background-color: beige;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+.br_button:not([disabled]):active {
+    background-color: rgb(207, 207, 187);
+}
+
+
+@media only screen and (max-width: 600px) {
+    #br_token_dialogbox {
+      width: 90%;
+    }
+  }
